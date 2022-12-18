@@ -1,0 +1,543 @@
+:root {
+    --color-primary: #917758;/*cria uma variavel para ser usada em toda a página*/
+    --color-secondary: #3c2915;
+    --color-primary-light: #f5eee6;
+}
+
+*{ 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto; /*centraliza o item no meio*/
+}
+
+
+
+/**********
+*   HOME 
+***********/
+
+.home {
+    position: relative; /*necessário utilizar para centralizar usando o position absolute*/
+    background-image: url(../images/bg-home.jpg); /* usar ../ para importar uma imagem de outra pasta*/
+    height: 100vh; /* VW coloca a imagem na area visivel do navegador*/
+    background-size: cover; /* faz com que a imagem não se repita na página*/
+    background-attachment: fixed; /* fixa a imagem*/
+}
+
+.home .header {
+    padding: 30px 0;
+}
+
+.home .header .nav {  /*centraliza os links e imagens usadas até a raiz nav*/
+    display: flex;
+    justify-content: center;
+}
+
+.home .header .nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.home .header .nav ul li {  /*centraliza os links e imagens usadas até a raiz li*/
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: center;
+}
+
+.home .header .nav ul li a { /*centraliza os links e imagens usadas até a raiz a*/
+    color: aliceblue;
+    text-transform: uppercase;
+    text-decoration: none; 
+    font-weight: bold;
+    font-size: 12px;
+    padding: 20px;
+}
+
+.home .header .nav ul li a:hover { /*personaliza os links*/
+    border-bottom: 1px solid var(--color-primary); /*uso de variavel dentro de classes " var(--color-primary)*/
+    color: var(--color-primary); /*muda a cor do links*/
+}
+
+.logo {
+    margin: 0 30px; /*personaliza o logo*/
+}
+
+
+
+
+/******************
+*    HOME - BANNER
+******************/
+
+.banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 250px;
+    width: 770px;
+    margin-left: -385px;
+    margin-top: -700px;
+    color: white;
+    text-align: center;
+}
+
+.home .banner span {
+    display: block;
+}
+
+.home .banner .slogan1 {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 15px;
+     margin-top: 500px;
+}
+
+.home .banner h1 {
+    font-size: 120px;
+}
+    
+
+.home .banner .slogan2 {
+    margin-bottom: 15px;
+}
+
+/******************
+*      ABOUT
+******************/
+
+.about {
+    background-color: var(--color-primary);
+}
+
+
+.about .container{
+    display: flex;
+}
+
+.about .timing {
+    position: relative;
+    top: -50px; /*permite que uma imagem sobressaia sobre outra, efeito cascata, antes deve-se utilizar o position relative*/
+    width: 33%;
+    padding: 20px;
+    background-image: url(../images/brush-big.jpg);
+}
+
+.about .timing .overlay {
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about .timing .icon-cut {
+    width: 50px;
+}
+
+.about .timing h3 {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    border-bottom: 4px solid var(--color-primary); /*cria um sublinhado abaixo do texto ou imagem*/
+    width: fit-content; /*deixa o border-bottom do tamanho do texto*/
+    margin: 0 auto 30px auto;
+    font-size: 30px;
+}
+
+.about .timing .text {
+    margin: 10px 0;
+}
+
+.about .timing .text::after{
+    content: '•';
+    display: block; /*obrigatório usar display block quando utilizar after*/
+    color: white;
+    font-size: 30px;
+    margin-top: 10px ;
+}
+
+.about .timing .text:last-of-type:after{ /*altera somente o último item da lista*/
+    content: '|';
+}
+
+.about .timing .text h4 {
+    color: grey;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+
+
+.about .timing span {
+    color: white;
+    font-size: 15px;
+    display: block;
+}
+
+.about .experience {
+    width: 66%;
+    color: white;
+    margin-left: 7%;
+    margin-top: 100px;
+}
+
+.about .experience h2 {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.about .experience h2:after {
+    display: block;
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: #a38f78;
+    margin: 20px 0;
+}
+
+.about .experience .text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .experience .text p {
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+/******************
+*     SERViCES
+******************/
+
+.services {
+    padding: 100px 0;
+    text-align: center;
+    background-color: var(--color-primary-light);
+   
+}
+
+.services h2 {
+    color: var(--color-secondary);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom:10px;
+}
+
+
+.services .boxes {
+    display: inline-block; /*centraliza div uma ao lado das outras*/
+    margin-top: 20px;
+    align-items: center;
+}
+
+.services .box {
+    border: 3px solid var(--color-primary);
+    padding: 50px 30px;
+    margin: 30px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 2px 10px 20px 10px black;
+}
+
+.services .box h4 {
+    color: var(--color-secondary);
+    margin-top: 30px;
+}
+
+.service .box p {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+/******************
+*    appointment
+******************/
+.appointment{
+    padding: 100px 0;
+    background-color: var(--color-primary);
+    height: 100vh;
+    background-image: url(../images/chair-ic.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 300px;
+}
+
+.appointment h2 {
+    color: var(--color-primary-light);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom:10px;
+    text-align: center;
+}
+
+.appointment img {
+    margin: auto;
+    display: block;
+}
+
+.appointment form {
+    margin-top: 80px;
+}
+
+.appointment .personal-data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.appointment .input-wrapper {
+    width: 100%;
+    margin-right: 50px;
+}
+
+.appointment .input-wrapper:last-of-type { /*muda o último item*/
+    margin-right: -17px;
+}
+
+.appointment label {
+    display: block;
+    color: var(--color-primary-light);
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.appointment .personal-data input,  /*permite configurar duas seleções*/
+.appointment .personal-data select, 
+.appointment textarea{
+    padding: 8px 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+}
+
+textarea{
+    height: 150px;
+}
+
+
+/******************
+*   galeria
+******************/
+
+.gallery{
+    padding: 100px 0;
+    background-color: var(--color-primary-light);
+}
+
+.gallery h2 {
+    color: var(--color-secondary);
+    font-weight: 400;
+    font-size: 75px;
+    margin-bottom:10px;
+    text-align: center;
+}
+
+.gallery img {
+    margin: auto;     /*permite colocar imagens dentro de uma div, seguir os passo de galley img ate galley div img*/
+    display: block;
+}
+
+.gallery .gallery-wrapper{  
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh ;
+    width: 1100px;
+    flex-wrap: wrap ;
+}
+
+.gallery .gallery-wrapper div {
+    border: 10px solid var(--color-primary);
+    margin: 6px;
+    width: 33%;
+}
+
+.gallery .gallery-wrapper div img{
+    width: 100%;
+}
+
+/******************
+*   map
+******************/
+
+.location{
+    padding: 100px 0;
+    background: url(../images/bg-location.jpg);
+    background-size: cover;
+}
+
+.location .head {
+    display: flex; /*colcoa elementos lado a lado*/
+    justify-content: space-between;
+    background-color: #191919;
+    padding: 20px;
+    width: 100%;
+    
+}
+
+.location .head .info {
+    display: flex;
+    align-items: center;
+}
+
+.location .head .info .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    padding: 15px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.location .head .info .text span {
+    display: block;
+    font-size: 13px;
+}
+
+.location .head .info .text span:first-child {
+    color: gray;
+}
+
+.location .head .info .text span:last-child {
+    color: var(--color-primary-light);
+}
+
+.location .map {
+    width: 100%;
+}
+
+.location .map iframe {
+    width: 1210px;
+}
+
+.footer {
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    background: #191919;
+    border: 3px solid var(--color-primary);
+    text-align: center;
+}
+
+@media (max-width: 1295px) { 
+    .home{
+        width: 1170px;
+    }
+}
+
+@media (max-width: 1295px) { 
+    .about{
+        width: 1170px;
+        background: var(--color-primary);
+    }
+}
+
+@media (max-width: 1295px) { 
+    .services{
+        width: 1170px;
+        background-color: black;
+    }
+}
+
+@media (max-width: 1295px) { 
+    .appointment{
+        width: 1170px;
+        background-color: black;
+    }
+
+    .appointment .input-wrapper:last-of-type { /*muda o último item*/
+        margin-right: 0px;
+    }
+
+
+}
+
+@media (max-width: 1295px) { 
+    form {
+     padding: 10px;   
+    }
+
+}
+
+
+
+@media (max-width: 1295px) { 
+    .gallery{
+        width: 1170px;
+        background-color: black;
+    }
+
+    .gallery .gallery-wrapper {
+        width: 1093px;
+        height: 140vh;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1295px) { 
+    .location{
+        width: 1170px;
+    }
+}
+
+@media (max-width: 1295px) { 
+    .location .head {
+        width: 95%;
+        border: 10px solid black;
+        
+    }
+}
+
+@media (max-width: 1295px) {
+.location .map iframe {
+    width: 100%;
+}
+}
+
+
+@media (max-width: 1295px) { 
+    div .info{
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 1295px) {   /*altera os itens até a div*/
+    body header nav ul li {
+        background-color: black;
+        color: white;
+    }
+
+}
+
+@media (max-width: 1295px) {   /*altera os itens até a div*/
+    body section {
+        background-color: black;
+        color: white;
+    }
+
+}
+
+@media (max-width: 1295px) {   /*altera os itens até a div*/
+    footer{
+        width: 1144px;
+        
+    }
+    .footer {
+        border: 3px solid #191919;
+    }
+}

@@ -4,66 +4,262 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>linktree</title>
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet"><!--link fonte personalizada deve sermpre vir antes do CSS-->
-    <link rel="stylesheet" href="style/style.css">
+    <title>Barber Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    
-    <div class="profile">
-        <img src="img/thiago.jpg" alt="Thiago" class="avatar">
-        <h1>Daniel Mendes Ferreira</h1>
-        <h2> Administrador | Engenheiro | Trader</h2>
-    
-    </div>
-     
-    <ul class="social"> 
-        <li>
-            <a href=""> <!--utilizar o href vazio por se tratar de imagens com links-->
-                <img src="img/youtube.png" alt="You tube">
-            </a>  
-        </li>
-        
-        <li>
-            <a href="">
-                <img src="img/insta.svg" alt="Instagram">
-            </a>  
-        </li>
-        
-        <li>
-            <a href="">
-                <img src="img/github.svg" alt="github">
-            </a>   
-        </li>
-        
-        <li>
-            <a href="">
-                <img src="img/linkedin.svg" alt="linkedin">
-            </a>   
-        </li>
-          
-        <li>
-            <a href="">
-                <img src="img/whatsapp.png" alt="whatsapp">
-            </a>   
-        </li>
 
-    </ul>
+    <section id="home" class="home">
+        <div class="container">
+            <header class="header">
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#Sobre">SObre</a>
+                        </li>
+                        <li>
+                            <a href="#Serviços">Serviços</a>
+                        </li>
+                        <li>
+                            <img src="images/logo.png" alt="Barber Shop" class="logo">
+                        </li>
+                        <li>
+                            <a href="Galeria">Galeria</a>
+                        </li>
+                        <li>
+                            <a href="Agendamentos">Agendamentos</a>
+                        </li>
+                        <li>
+                            <a href="Localização">Localização</a>
+                        </li>
+                    </ul>
+                </nav> 
+                <div class="banner">
+                    <span class="slogan1">Profissionalismo e ExcelÊncia</span>
+                    <h1>Barber Shop</h1>
+                    <span class="slogan2">O melhor lugar para cuidar do seu estilo</span>
+                    <img src="images/much-img.png" alt="Barber Shop">
+                </div>
+            </header>
+           
+        </div>
+       
 
-    <ul class="link-list">
-        <li>
-            <a href="">
-                Desenvolvimento de Páginas Web
-                <span>Sua página web com a cara do seu negócio</span> <!--a tag span altera o paragrafo individualmente-->
-            </a>
-        </li>
-        <li>
-            <a href="">
-                Fábrica de Páginas Web
-                <span>Desenvolva sua própria página web</span>
-            </a>
-        </li>  
-    </ul>
+        
+    </section>
+
+    <section id="Sobre" class="about">
+        <div class="container">
+            <div class="timing">
+                <div class="overlay">
+                    <img src="images/classic-cut.png" alt="Horários" class="icon-cut">
+                    <h3>Horários</h3>
+
+                    <div class="text">
+                        <h4>Segunda-feira à Sexta-feira</h4>
+                        <span>09:00 AM - 17:00 PM</span>
+                    </div>
+
+                    <div class="text">
+                        <h4>Sábado</h4>
+                        <span>09:00 AM - 14:00 PM</span>
+                    </div>
+
+                    <div class="text">
+                        <h4>Domingo</h4>
+                        <span>Fechado</span>
+                    </div>
+                    <br>
+                    <img src="images/loc-ic.png" alt="Localização">
+                    <span>Rua da Margura, nº 123</span>
+                    <br>
+                    <img src="images/phone-ic.png" alt="Telefone">
+                    <span> (67) 99999-9999</span>
+                   
+                </div>
+            </div>
+            <div class="experience">
+                <span>Uma história única</span>
+                <h2>52 anos de experiência</h2>
+
+                <div class="text">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, est! Pariatur ipsam repellat est magnam, autem molestiae, velit laudantium in et voluptatum reiciendis! Iure adipisci laborum iusto ad qui esse.</p>
+                        
+
+                        
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, est! Pariatur ipsam repellat est magnam, autem molestiae, velit laudantium in et voluptatum reiciendis! Iure adipisci laborum iusto ad qui esse.</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, est! Pariatur ipsam repellat est magnam, autem molestiae, velit laudantium in et voluptatum reiciendis! Iure adipisci laborum iusto ad qui esse.</p>
+                    </div>
+
+                    <img src="images/shave-brush.jpg" alt="52 anos de experiência">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Serviços" class="services">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <img src="images/heading-ic.png" alt="Serviços">
+            <br>
+            <div class="boxes">
+                <div class="box">
+                    <img src="images/classic-cut.png" alt="Classic Cut">
+                    <h4>Lorem Ipsum</h4>
+                    <img src="images/head-line-ic.png">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sapiente eligendi deleniti, quasi nesciunt quae itaque delectus rerum fugit perspiciatis rem eius nam error explicabo? Assumenda amet rerum laudantium quaerat.</p>
+                </div>
+            </div>
+
+            <div class="boxes">
+                <div class="box">
+                    <img src="images/clipper-cut.png" alt="Cliper Cut">
+                    <h4>Lorem Ipsum</h4>
+                    <img src="images/head-line-ic.png">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sapiente eligendi deleniti, quasi nesciunt quae itaque delectus rerum fugit perspiciatis rem eius nam error explicabo? Assumenda amet rerum laudantium quaerat.</p>
+                </div>
+            </div>
+
+            <div class="boxes">
+                <div class="box">
+                    <img src="images/razoe-shaver.png" alt="Shaver">
+                    <h4>Lorem Ipsum</h4>
+                    <img src="images/head-line-ic.png">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sapiente eligendi deleniti, quasi nesciunt quae itaque delectus rerum fugit perspiciatis rem eius nam error explicabo? Assumenda amet rerum laudantium quaerat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="appointment">
+        <div class="container">
+            <h2>Faça um agendamento</h2>
+            <img src="images/heading-ic-white.png" alt="Faça um agendamento">
+            
+            <form>
+                <div class="personal-data">
+                    <div class="input-wrapper">
+                        <label>Nome:</label>
+                        <input type="text" placeholder="Digite o seu nome:">
+                    </div>
+                    <div class="input-wrapper">
+                        <label>E-mail:</label>
+                        <input type="text" placeholder="Digite o seu E-mail:">
+                    </div>
+                    <div class="input-wrapper">
+                        <label>Telefone:</label>
+                        <input type="text" placeholder="Digite o seu telefone:">
+                    </div>
+                    <div class="input-wrapper">
+                        <label>Tipos de serviço:</label>
+                        <select> <!--cria uma caixa com opções-->
+                            <option value="Cortar cabelo">Cortar cabelo</option>
+                            <option value="Fazer a barba">Fazer a barba</option>
+                            <option value="Cortar cabelo">Cortar cabelo</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-wrapper">
+                    <label>Mensagem</label>
+                    <textarea></textarea>
+                </div>
+            </form>
+                
+
+
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <h2>Galeria</h2>
+            <img src="images/heading-ic.png" alt="Galeria de fotos">
+            <div class="gallery-wrapper">
+                <div>
+                    <img src="images/gallery-img1.png" alt="galeria">
+                </div>
+                <div>
+                    <img src="images/gallery-img2.png" alt="galeria">
+                </div>
+                <div>
+                    <img src="images/gallery-img3.png" alt="galeria">
+                </div>
+                <div>
+                    <img src="images/gallery-img4.png" alt="galeria">
+                </div>
+                <div>
+                    <img src="images/gallery-img5.png" alt="galeria">
+                </div>
+                <div>
+                    <img src="images/gallery-img6.png" alt="galeria">
+                </div>
+                <div>
+                    <img src="images/gallery-img7.png" alt="galeria">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location">
+
+        <div class="container">
+            <div class="head">
+                <div class="info">
+                    <div class="icon">
+                        <img src="images/map-img1.png">
+                    </div>
+                    <div class="text">
+                        <span>Localização</span>
+                        <span>Rua da Matriz, 33</span>
+                    </div>
+                </div>
+                    
+                <div class="info">
+                    <div class="icon">
+                        <img src="images/map-img2.png">
+                    </div>
+                    <div class="text">
+                        <span>Telefone</span>
+                        <span>(11) 9999-9999</span>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <div class="icon">
+                        <img src="images/map-img3.png">
+                    </div>
+                    <div class="text">
+                        <span>Email</span>
+                        <span>Contato@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <div class="icon">
+                        <img src="images/map-img4.png">
+                    </div>
+                    <div class="text">
+                        <span>Horário</span>
+                        <span>Seg. à Sex: 9AM às 17PM</span>
+                    </div>
+                </div>
+
+            </div> 
+
+            <div class="map">  
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.024541010604!2d-55.724850584441775!3d-22.540753430580285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94626ef04eeb481b%3A0x874e7aaacf1dd7cf!2s11%20RCMEC%20Ex%C3%A9rcito%20Brasileiro!5e0!3m2!1spt-BR!2sbr!4v1671218867509!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          
+            </div>
+        </div>
+    </section>
+
+    <footer id="home" class="footer">
+        2023 Barber Shop - Todos os direitos reservados
+    </footer>  
 </body>
 </html>
